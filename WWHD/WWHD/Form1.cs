@@ -12,6 +12,7 @@ namespace WWHD
 {
     public partial class Form1 : Form
     {
+        Munitions round;
         protected Timer tmr;
         protected int x, y;
         public Form1()
