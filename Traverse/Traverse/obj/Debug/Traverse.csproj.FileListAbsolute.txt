@@ -1,0 +1,9 @@
+c:\users\stewi\documents\visual studio 2015\Projects\Traverse\Traverse\bin\Debug\Traverse.exe.config
+C:\Users\stewi\Documents\Visual Studio 2015\Projects\Traverse\Traverse\obj\Debug\Traverse.csprojResolveAssemblyReference.cache
+C:\Users\stewi\Documents\Visual Studio 2015\Projects\Traverse\Traverse\obj\Debug\Traverse.Form1.resources
+C:\Users\stewi\Documents\Visual Studio 2015\Projects\Traverse\Traverse\obj\Debug\Traverse.Properties.Resources.resources
+C:\Users\stewi\Documents\Visual Studio 2015\Projects\Traverse\Traverse\obj\Debug\Traverse.csproj.GenerateResource.Cache
+C:\Users\stewi\Documents\Visual Studio 2015\Projects\Traverse\Traverse\bin\Debug\Traverse.exe
+C:\Users\stewi\Documents\Visual Studio 2015\Projects\Traverse\Traverse\bin\Debug\Traverse.pdb
+C:\Users\stewi\Documents\Visual Studio 2015\Projects\Traverse\Traverse\obj\Debug\Traverse.exe
+C:\Users\stewi\Documents\Visual Studio 2015\Projects\Traverse\Traverse\obj\Debug\Traverse.pdb

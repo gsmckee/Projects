@@ -1,0 +1,6 @@
+c:\users\stewi\documents\visual studio 2015\Projects\math\math\bin\Debug\math.exe.config
+c:\users\stewi\documents\visual studio 2015\Projects\math\math\obj\Debug\math.csprojResolveAssemblyReference.cache
+c:\users\stewi\documents\visual studio 2015\Projects\math\math\bin\Debug\math.exe
+c:\users\stewi\documents\visual studio 2015\Projects\math\math\bin\Debug\math.pdb
+c:\users\stewi\documents\visual studio 2015\Projects\math\math\obj\Debug\math.exe
+c:\users\stewi\documents\visual studio 2015\Projects\math\math\obj\Debug\math.pdb

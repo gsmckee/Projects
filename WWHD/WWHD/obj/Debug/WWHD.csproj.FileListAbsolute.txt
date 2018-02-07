@@ -1,0 +1,9 @@
+c:\users\stewi\documents\visual studio 2015\Projects\WWHD\WWHD\bin\Debug\WWHD.exe.config
+c:\users\stewi\documents\visual studio 2015\Projects\WWHD\WWHD\bin\Debug\WWHD.exe
+c:\users\stewi\documents\visual studio 2015\Projects\WWHD\WWHD\bin\Debug\WWHD.pdb
+c:\users\stewi\documents\visual studio 2015\Projects\WWHD\WWHD\obj\Debug\WWHD.csprojResolveAssemblyReference.cache
+c:\users\stewi\documents\visual studio 2015\Projects\WWHD\WWHD\obj\Debug\WWHD.Properties.Resources.resources
+c:\users\stewi\documents\visual studio 2015\Projects\WWHD\WWHD\obj\Debug\WWHD.csproj.GenerateResource.Cache
+c:\users\stewi\documents\visual studio 2015\Projects\WWHD\WWHD\obj\Debug\WWHD.exe
+c:\users\stewi\documents\visual studio 2015\Projects\WWHD\WWHD\obj\Debug\WWHD.pdb
+c:\users\stewi\documents\visual studio 2015\Projects\WWHD\WWHD\obj\Debug\WWHD.Form1.resources

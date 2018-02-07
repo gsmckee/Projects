@@ -1,0 +1,6 @@
+c:\users\stewi\documents\visual studio 2015\Projects\Bank1\Bank1\bin\Debug\Bank1.exe.config
+c:\users\stewi\documents\visual studio 2015\Projects\Bank1\Bank1\bin\Debug\Bank1.exe
+c:\users\stewi\documents\visual studio 2015\Projects\Bank1\Bank1\bin\Debug\Bank1.pdb
+c:\users\stewi\documents\visual studio 2015\Projects\Bank1\Bank1\obj\Debug\Bank1.csprojResolveAssemblyReference.cache
+c:\users\stewi\documents\visual studio 2015\Projects\Bank1\Bank1\obj\Debug\Bank1.exe
+c:\users\stewi\documents\visual studio 2015\Projects\Bank1\Bank1\obj\Debug\Bank1.pdb
