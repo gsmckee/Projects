@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C8020E14-6708-4B23-85C0-EB25052B0BF2}"
 	ProjectSection(SolutionItems) = preProject
 		Munitions.cs = Munitions.cs
+		Shape.cs = Shape.cs
 	EndProjectSection
 EndProject
 Global

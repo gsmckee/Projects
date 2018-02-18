@@ -1,8 +1,8 @@
 ﻿using System;
 
-public class Class1
+public enum Shape
 {
-	public Class1()
-	{
-	}
+	Circular, Bullet, Grenade
 }
+static 
+

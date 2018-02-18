@@ -121,4 +121,19 @@
   <data name="CannonBall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\standard1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Grenade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grenade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Missile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Missile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mortar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mortar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Projectile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Projectile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rocket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rocket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

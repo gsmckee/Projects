@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cannonball.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +85,12 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="images\Standard1.png" />
+    <None Include="Resources\Mortar.png" />
+    <None Include="Resources\Grenade.png" />
+    <None Include="Resources\Missile.png" />
+    <None Include="Resources\Rocket.png" />
+    <None Include="Resources\Missile" />
+    <None Include="Resources\Projectile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
