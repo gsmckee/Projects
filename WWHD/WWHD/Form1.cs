@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using 
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -38,16 +37,17 @@ namespace WWHD
         //    }
         //}
         protected Timer tmr;// used to apply movement
-        protected int x, y; // starting positon
+
+        // starting positon, velocity for direction, and acting gravitational pull.
+        protected int x, y, velX, velY, angle; 
+
         public Bitmap objImg;// store .png to be referenced
-        protected Polynomial p;
+
+        //Polynomial p;
         public Form1()
         {
-            
-            //round = new Cannonball(10, 50, 1, 1, 10);
-
             x = 10;
-            y = 50;
+            y = 50;           
             tmr = new Timer();
             tmr.Interval = 17;
             tmr.Tick += Tmr_Tick;
@@ -56,8 +56,9 @@ namespace WWHD
 
         private void Tmr_Tick(object sender, EventArgs e)// Timer 
         {
-            x = x + 1;
-            y = y + 1;
+            //x = x + 1;
+            //y = y + 1;
+            fireObject();
             Invalidate();
         }
 
@@ -78,13 +79,29 @@ namespace WWHD
             //base.OnPaint(e);
             int imgHeight = (Properties.Resources.CannonBall.Height) / 2;
             int imgWidth = (Properties.Resources.CannonBall.Width) / 2;
-            int xPic = x - (Properties.Resources.CannonBall.Height) / 2;
-            int yPic = (this.Height - y) - imgHeight;
+            int xPic = (int)x - (Properties.Resources.CannonBall.Height) / 2;
+            int yPic = (int)(this.Height - y) - imgHeight;
             Graphics pic = e.Graphics;
             pic.Clear(Color.DarkSlateBlue);
             pic.ResetTransform();
             pic.TranslateTransform(xPic, yPic);
             pic.DrawImage(Properties.Resources.CannonBall, new Point(0, 0));
+        }
+        // Method to handle motion of object.
+        protected void fireObject()
+        {
+
+            velX = x + 1;
+            velY = y + 1;
+            x = velX;
+            y = velY;
+            gravity();
+        }
+        
+        //Gravity effect
+        protected void gravity()
+        {
+            y = y + velY * tmr.Interval / 2;
         }
 
         // Take action on selected index of combo box.

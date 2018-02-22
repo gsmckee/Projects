@@ -2,27 +2,18 @@
 
 public class Munitions
 {
-    protected int X;
-    protected int Y;
-    protected int VX;
-    protected int VY;
     protected int Mass;
     protected double Angle;
 
 	protected Munitions()
 	{
-        X = 0;
-        Y = 0;
-        VX = 0;
-        VY = 0;
+        Mass = 0;
+        Angle = 0;
 	}
     // Basic Constructor
-    public Munitions(int x, int y, int vX, int vY, double angle)
+    public Munitions(int mass, double angle)
     {
-        this.X = x;
-        this.Y = y;
-        this.VX = vX;
-        this.VY = vY;
+        this.Mass = mass;
         this.Angle = angle;
     }
 }

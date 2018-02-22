@@ -16,68 +16,81 @@ public:
 	int m_capacity;
 	int m_lowBound;
 	int m_upBound;
-	int m_count;
-	Safe_array(std::string dtype, int a, int b) 
+	//int m_count;
+	Safe_array( int a, int b)
 	{
 		m_lowBound = a;
 		m_upBound = b;
 		Capacity();
 		m_array = new T[m_capacity];
-		
-		if (dtype == "int")
+		for (int i = 0; i < m_capacity; i++)
 		{
-			for (int i = 0; i < m_capacity; i++)
-			{
-				m_array[i] = i;
-				m_count++;
-				std::cout << m_array[i] << std::endl;
-			}
+			m_array[i] = i;
+			//m_count++;
+			std::cout << m_array[i] << std::endl;
 		}
-		else if (dtype == "float")
-		{
-			for (int i = 0; i < m_capacity; i++)
-			{
-				m_array[i] = (i * 0.2537985);
-				m_count++;
-				std::cout << m_array[i] << std::endl;
-
-			}
-		}
-		else if (dtype == "double")
-		{
-			for (int i = 0; i < m_capacity; i++)
-			{
-				m_array[i] = (i + (i * 0.1));
-				m_count++;
-				std::cout << m_array[i] << std::endl;
-			}
-		}
-		
-						
-		/*else if (typeid(m_capacity) = typeid(string))
-		{
-			m_array[i] = i>> std::istringstream()
-		}*/
-		else { std::cout << "Improper data type." << std::endl; }
-		std::cout << "Size of the array " << m_count << std::endl;
-		
 	}
-	~Safe_array(void) 
+	int SetValueInt(int index)// set value at given index 
+	{
+		m_array[index] = index;
+		return m_array[index];
+	}
+	double SetValueDouble(int index)
+	{
+		m_array[index] = (index * 0.2537985);
+		return m_array[index];
+	}
+	float SetValueFloat(int index)
+	{
+		m_array[index] = (index + (index * 0.15));
+		return m_array[index];
+	}
+	//T fillArray(Safe_array &s)
+	//{
+	//	T value;
+	//	value = type_info(s);
+	//	std::cout << value << std::endl;
+	//	switch (type_info(s))
+	//	{
+	//	case int: for (int i = 0; i < &Capacity; i++)
+	//					{
+	//						s[i] = i;
+	//						//m_count++;
+	//						std::cout << s[i] << std::endl;
+	//					}
+	//	case double: for (int i = 0; i < s.Capacity; i++)
+	//					{
+	//						s[i] = (i + (i * 0.1))
+	//						//m_count++;
+	//						std::cout << s[i] << std::endl;
+	//					}
+	//	case float: for (int i = 0; i < s.Capacity; i++)
+	//					{
+	//						s[i] = (i + (i * 0.1))
+	//							//m_count++;
+	//							std::cout << s[i] << std::endl;
+	//					}
+	//	default:
+	//		break;
+	//	}
+	//}
+	
+	~Safe_array(void)
 	{
 		delete[] m_array;
 	}
 
-	T operator[](int index) 
+	T operator[](int index)
 	{
 		T a;
-		a = index - m_lowBound;
+		a = index;
 		return a;
 	}
 	static void Unit_test(void)
 	{
 		Safe_array sa(-6, 8);
 		T a = sa[5];
-		std::cout << a<< std::endl;
+		std::cout << a << std::endl;
 	}
 	
 private:

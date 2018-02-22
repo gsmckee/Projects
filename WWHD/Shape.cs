@@ -3,6 +3,5 @@
 public enum Shape
 {
 	Circular, Bullet, Grenade
-}
-static 
+} 
 

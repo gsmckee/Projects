@@ -52,7 +52,7 @@ void templates(void)
 	float* array2 = new float[5];
 
 	// Static array 
-	int array3[10];
+	//int array3[10];
 
 	// Template Specialization... Declaring typename to be used by the Template
 	Array<int> a1(5); // size is 5*4 bytes.
