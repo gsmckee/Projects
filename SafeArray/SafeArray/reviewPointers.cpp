@@ -1,10 +1,9 @@
-
-
 #include <cstdio>
 #include <iostream>
 #include <stdexcept>
 #include <cstring>
 #include <string>
+
 void reviewPointers(void)
 {
 	FILE* f = fopen("Array.txt", "r");// the r stands for "read only" 
@@ -50,10 +49,15 @@ void reviewPointers(void)
 		}
 	}
 	fclose(f);
+
+	int sum = 0;
+	double avg = 0;
 	for (int i = 0; i < counter; i++)
 	{
 		std::cout << "Current value in array = " << array[i] << std::endl;
+		sum += array[i];
 	}
+	printf("sum = %i - average = %f\r\n", sum, (double)sum / (double)counter);
 	delete[] array;
 	return;
 }
