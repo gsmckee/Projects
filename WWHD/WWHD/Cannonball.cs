@@ -13,7 +13,7 @@ namespace WWHD
             base()
         {
         }
-        public Cannonball(int mass, double angle) :
+        public Cannonball(int x, int y, double angle) :
             base()
         {
 

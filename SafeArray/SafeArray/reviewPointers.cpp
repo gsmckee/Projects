@@ -4,9 +4,11 @@
 #include <cstring>
 #include <string>
 
+#include "ConvertInfo.hpp"
+
 void reviewPointers(void)
-{
-	FILE* f = fopen("Array.txt", "r");// the r stands for "read only" 
+{	
+	FILE* f = fopen("data.txt", "r");// the r stands for "read only" 
 	if (f == NULL)
 	{
 		printf("the file could not be opened");
@@ -20,7 +22,8 @@ void reviewPointers(void)
 		fgets(buffer, 1024, f);
 		int sizeLine = strlen(buffer);
 		//printf("%i\r\n", buffer[0], sizeLine);
-		if((int)buffer[0] != 10)
+		
+		if((int)buffer[0] >= 48 && (int)buffer[0] <= 57)
 		{
 
 			counter++;
@@ -28,14 +31,17 @@ void reviewPointers(void)
 	}
 	fclose(f);
 	printf("You have %i lines in your data file \r\n", counter);
+	//char* str;
 	int* array = new int[counter];
-	f = fopen("Array.txt", "r");
+	f = fopen("data.txt", "r");
 	// Reset counter to 0, to use as a counter for appending the array.
 	counter = 0;
 	while (!feof(f))
 	{
 		fgets(buffer, 1024, f);
-		if ((int)buffer[0] != 10)
+
+		 //Comment out if block to check ascii value.
+		if ((int)buffer[0] >= 48 && (int)buffer[0] <= 57)
 		{			
 			std::string s(buffer);
 			try
@@ -50,6 +56,8 @@ void reviewPointers(void)
 	}
 	fclose(f);
 
+	
+
 	int sum = 0;
 	double avg = 0;
 	for (int i = 0; i < counter; i++)
@@ -58,6 +66,31 @@ void reviewPointers(void)
 		sum += array[i];
 	}
 	printf("sum = %i - average = %f\r\n", sum, (double)sum / (double)counter);
-	delete[] array;
+	//delete[] array;
 	return;
+}
+char* charArray()
+{
+	char* buffer = new char[1024];
+	FILE* f = fopen("data.txt", "r");
+	f = fopen("data.txt", "r");
+	while (!feof(f))
+	{
+
+		for (int i = 0; i < 1024; i++)
+		{			
+			buffer[i] = fgetc(f);
+			//PerformConversion(buffer);
+			printf("%c\r\n", buffer[i]);
+		}
+	}
+	fclose(f);
+	return buffer;
+	delete[] buffer;
+}
+ConvertInfo PerformConversion()
+{
+	const char* s = charArray();
+	ConvertInfo convert(s);
+	return convert;
 }

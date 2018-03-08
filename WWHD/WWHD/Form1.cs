@@ -42,12 +42,10 @@ namespace WWHD
         protected int x, y, velX, velY, angle; 
 
         public Bitmap objImg;// store .png to be referenced
-
-        //Polynomial p;
+        
         public Form1()
         {
-            x = 10;
-            y = 50;           
+            round = new Cannonball(10, 50, 45);          
             tmr = new Timer();
             tmr.Interval = 17;
             tmr.Tick += Tmr_Tick;
@@ -58,7 +56,7 @@ namespace WWHD
         {
             //x = x + 1;
             //y = y + 1;
-            fireObject();
+            round.moveObj();
             Invalidate();
         }
 
@@ -77,32 +75,20 @@ namespace WWHD
         protected override void OnPaint(PaintEventArgs e)
         {
             //base.OnPaint(e);
-            int imgHeight = (Properties.Resources.CannonBall.Height) / 2;
-            int imgWidth = (Properties.Resources.CannonBall.Width) / 2;
-            int xPic = (int)x - (Properties.Resources.CannonBall.Height) / 2;
+            int imgHeight = (Properties.Resources.Standard1.Height) / 2;
+            int imgWidth = (Properties.Resources.Standard1.Width) / 2;
+            int xPic = (int)x - (Properties.Resources.Standard1.Height) / 2;
             int yPic = (int)(this.Height - y) - imgHeight;
             Graphics pic = e.Graphics;
             pic.Clear(Color.DarkSlateBlue);
             pic.ResetTransform();
             pic.TranslateTransform(xPic, yPic);
-            pic.DrawImage(Properties.Resources.CannonBall, new Point(0, 0));
+            pic.DrawImage(Properties.Resources.Standard1, new Point(0, 0));
         }
         // Method to handle motion of object.
-        protected void fireObject()
-        {
-
-            velX = x + 1;
-            velY = y + 1;
-            x = velX;
-            y = velY;
-            gravity();
-        }
         
         //Gravity effect
-        protected void gravity()
-        {
-            y = y + velY * tmr.Interval / 2;
-        }
+        
 
         // Take action on selected index of combo box.
 

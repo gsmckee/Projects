@@ -18,9 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BinaryData.cpp" />
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2A4A6E68-2DCD-43B2-8154-3BCDF449902D}</ProjectGuid>
-    <RootNamespace>SafeArray</RootNamespace>
+    <ProjectGuid>{052A631E-9A99-470E-8102-A15615BBFE4F}</ProjectGuid>
+    <RootNamespace>Week4PRG423</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,17 +114,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="ConvertInfo.hpp" />
-    <ClInclude Include="Safe_array.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Common.cpp" />
-    <ClCompile Include="ConvertInfo.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="reviewPointers.cpp" />
-    <ClCompile Include="Safe_array.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -63,16 +63,6 @@ namespace WWHD.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CannonBall {
-            get {
-                object obj = ResourceManager.GetObject("CannonBall", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Grenade {
             get {
                 object obj = ResourceManager.GetObject("Grenade", resourceCulture);
@@ -116,6 +106,16 @@ namespace WWHD.Properties {
         internal static System.Drawing.Bitmap Rocket {
             get {
                 object obj = ResourceManager.GetObject("Rocket", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Standard1 {
+            get {
+                object obj = ResourceManager.GetObject("Standard1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

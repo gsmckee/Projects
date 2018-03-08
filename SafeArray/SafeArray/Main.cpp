@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Safe_array.hpp"
+//#include "reviewPointers.cpp"
 
 #include <iostream>
 #include <cstring> // C support
@@ -9,6 +10,7 @@
 #include <sstream>
 
 void reviewPointers(void);
+
 int main()
 {
 	//std::string input;
@@ -51,8 +53,8 @@ int main()
 	//{
 	//	std::cout << "Your data type entered is " + input << std::endl;
 	//}
-	
 	reviewPointers();
+	//PerformConversion();
 	/*system("pause");*/
 	
 	return 0;
