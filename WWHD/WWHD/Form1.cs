@@ -13,6 +13,7 @@ namespace WWHD
     public partial class Form1 : Form
     {
         Cannonball round;// declare object of child class Cannonball
+        //round = new Cannonball(10, 50, 45);
 
         //Property to handle changing image associated with selection from combo box.
 
@@ -23,7 +24,7 @@ namespace WWHD
         //    {
         //        // check if there was a selection 
         //        return cbOrdList.SelectedText != null ? ordShape : null;
-                
+
         //    }
         //    set
         //    {
@@ -33,7 +34,7 @@ namespace WWHD
         //            objImg = (Bitmap)Properties.Resources.ResourceManager.GetObject(cbOrdList.GetItemText(cbOrdList.SelectedItem));
         //        }
         //        else objImg = null;
-                    
+
         //    }
         //}
         protected Timer tmr;// used to apply movement
@@ -45,7 +46,10 @@ namespace WWHD
         
         public Form1()
         {
-            round = new Cannonball(10, 50, 45);          
+            round = new Cannonball(10,50,45);
+            objImg = Properties.Resources.Standard1;
+            //x = 10;
+            //y = 50;
             tmr = new Timer();
             tmr.Interval = 17;
             tmr.Tick += Tmr_Tick;
@@ -54,6 +58,7 @@ namespace WWHD
 
         private void Tmr_Tick(object sender, EventArgs e)// Timer 
         {
+            
             //x = x + 1;
             //y = y + 1;
             round.moveObj();
@@ -75,19 +80,17 @@ namespace WWHD
         protected override void OnPaint(PaintEventArgs e)
         {
             //base.OnPaint(e);
-            int imgHeight = (Properties.Resources.Standard1.Height) / 2;
-            int imgWidth = (Properties.Resources.Standard1.Width) / 2;
-            int xPic = (int)x - (Properties.Resources.Standard1.Height) / 2;
+            int imgHeight = (objImg.Height) / 2;
+            int imgWidth = (objImg.Width) / 2;
+            int xPic = (int)x - (objImg.Height) / 2;
             int yPic = (int)(this.Height - y) - imgHeight;
             Graphics pic = e.Graphics;
             pic.Clear(Color.DarkSlateBlue);
             pic.ResetTransform();
             pic.TranslateTransform(xPic, yPic);
-            pic.DrawImage(Properties.Resources.Standard1, new Point(0, 0));
+            pic.DrawImage(objImg, new Point(0, 0));
         }
-        // Method to handle motion of object.
-        
-        //Gravity effect
+       
         
 
         // Take action on selected index of combo box.

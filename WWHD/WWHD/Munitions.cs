@@ -1,7 +1,8 @@
 ﻿using System;
 
-public class Munitions
+abstract public class Munitions
 {
+    protected static int gravity = -1;
     protected int X, Y, VelX, VelY;
     protected double Angle;
     protected Enum Shape;
@@ -16,13 +17,7 @@ public class Munitions
         this.VelY = 1;
         this.Angle = angle;
     }
-    public void moveObj()
+    virtual public void moveObj()
     {
-        X = X + VelX;
-        Y = Y + VelY;
-    }
-    public void gravity()
-    {
-        Y = VelY - 1;
     }
 }

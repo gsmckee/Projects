@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WWHD
 {
-    public class Cannonball : 
+    public partial class Cannonball : 
         Munitions
     {
         public Cannonball() : 
@@ -17,6 +17,19 @@ namespace WWHD
             base()
         {
 
+        }
+        override public void  moveObj()
+        {
+
+            X = X + VelX;
+            if (Y == 150)
+            {
+                Y = Y + (VelY + gravity);
+            }
+            else if (Y < 50)
+            {
+                Y = Y + VelY;
+            }
         }
     }
 }
