@@ -9,27 +9,16 @@ namespace WWHD
     public partial class Cannonball : 
         Munitions
     {
-        public Cannonball() : 
+       
+        protected Cannonball() : 
             base()
         {
         }
-        public Cannonball(int x, int y, double angle) :
-            base()
+        public Cannonball(int x, int y, int mass, double angle, double angleV) :
+            base(x,y,mass,angle, angleV)
         {
-
-        }
-        override public void  moveObj()
-        {
-
-            X = X + VelX;
-            if (Y == 150)
-            {
-                Y = Y + (VelY + gravity);
-            }
-            else if (Y < 50)
-            {
-                Y = Y + VelY;
-            }
         }
     }
 }
+//air density kg/m3 = 1.2754
+//
